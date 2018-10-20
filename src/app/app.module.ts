@@ -1,16 +1,31 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DragDropSortingComponent } from './components/drag-drop-sorting/drag-drop-sorting.component';
+import { AppMaterialModule } from './app-material-module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { MatNativeDateModule } from '@angular/material';
+import { FieldRowComponent } from './components/field-row/field-row.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DragDropSortingComponent,
+    FieldRowComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    BrowserAnimationsModule,
+    FormsModule,
+    HttpClientModule,
+    AppMaterialModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

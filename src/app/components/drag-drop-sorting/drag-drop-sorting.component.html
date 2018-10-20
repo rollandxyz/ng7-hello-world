@@ -1,0 +1,10 @@
+
+<div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+  <div class="example-box" *ngFor="let movie of movies" cdkDrag>
+    <app-field-row [name]="movie"></app-field-row>
+  </div>
+</div>
+<br>
+<button mat-raised-button color="primary" (click)="onClicked()"> Save </button>
+<hr>
+<div> {{result}}</div>
