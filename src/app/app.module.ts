@@ -10,12 +10,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatNativeDateModule } from '@angular/material';
 import { FieldRowComponent } from './components/field-row/field-row.component';
+import { FileUploadComponent } from './components/file-upload/file-upload.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DragDropSortingComponent,
-    FieldRowComponent
+    FieldRowComponent,
+    FileUploadComponent
   ],
   imports: [
     BrowserModule,
