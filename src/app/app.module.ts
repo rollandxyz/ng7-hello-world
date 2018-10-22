@@ -11,13 +11,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatNativeDateModule } from '@angular/material';
 import { FieldRowComponent } from './components/field-row/field-row.component';
 import { FileUploadComponent } from './components/file-upload/file-upload.component';
+import { XlsxViewComponent } from './components/xlsx-view/xlsx-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DragDropSortingComponent,
     FieldRowComponent,
-    FileUploadComponent
+    FileUploadComponent,
+    XlsxViewComponent
   ],
   imports: [
     BrowserModule,

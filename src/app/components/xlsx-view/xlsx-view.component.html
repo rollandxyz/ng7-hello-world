@@ -1,0 +1,14 @@
+<input type="file" (change)="onFileChange($event)" multiple="false" />
+<table id="customers" *ngIf="data && data.length>0">
+	<tr>
+		<th *ngFor="let val of data[0]">
+			{{val}}
+		</th>
+	</tr>
+	<tr *ngFor="let row of data.slice(1); let i = index">
+		<td *ngFor="let val of row">
+			{{val}}
+		</td>
+	</tr>
+</table>
+<button (click)="export()">Export !</button>
