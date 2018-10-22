@@ -1,6 +1,8 @@
-# Dockerized Ng7-Hello-World with docker
+# Dockerized Ng7-Hello-World
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.2.
+[docker containerization guide](containerize-ng-app-with-docker.md)
+
 
 ## Development server
 
