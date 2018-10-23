@@ -8,7 +8,7 @@
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
-      "schematics": {
+       "schematics": {
         "@schematics/angular:component": {
           "styleext": "scss"
         }
@@ -135,5 +135,6 @@
       }
     }
   },
-  "defaultProject": "ng7-hello-world"
+  "defaultProject": "ng7-hello-world",
+  
 }

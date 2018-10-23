@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DragDropSortingComponent } from './drag-drop-sorting.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('DragDropSortingComponent', () => {
   let component: DragDropSortingComponent;
@@ -8,7 +9,8 @@ describe('DragDropSortingComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DragDropSortingComponent ]
+      declarations: [ DragDropSortingComponent ],
+      schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
     })
     .compileComponents();
   }));
@@ -19,7 +21,9 @@ describe('DragDropSortingComponent', () => {
     fixture.detectChanges();
   });
 
+
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
 });

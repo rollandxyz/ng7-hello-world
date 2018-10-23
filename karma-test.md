@@ -1,0 +1,1 @@
+https://github.com/fadc80/karma-sonarqube-reporter/blob/master/karma.conf.js
