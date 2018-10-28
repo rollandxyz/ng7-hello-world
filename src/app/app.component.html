@@ -1,14 +1,25 @@
 
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <mat-button-toggle-group #group="matButtonToggleGroup">
+            <mat-button-toggle value="xlsxView"> xlsx-view </mat-button-toggle>
+            <mat-button-toggle value="fileUpload">  file-upload</mat-button-toggle>
+            <mat-button-toggle value="dragDropSorting">   drag-drop-sorting</mat-button-toggle>
+        </mat-button-toggle-group>
+    </mat-toolbar-row>
+</mat-toolbar>
 
-<!--
-<app-file-upload> </app-file-upload>
+<div fxLayout="column">
+    <div fxLayout="row" *ngIf="group.value ==='xlsxView'">
+        <app-xlsx-view > loading </app-xlsx-view>
+    </div>
+    <div fxLayout="row" class="mat-app-background basic-container"
+            *ngIf="group.value ==='dragDropSorting'">
+        <app-drag-drop-sorting>loading</app-drag-drop-sorting>
+    </div>
 
-<div class="mat-app-background basic-container">
-    <app-drag-drop-sorting>loading</app-drag-drop-sorting>
+    <div fxLayout="row" *ngIf="group.value ==='fileUpload'">
+        coming soon
+        <!-- <app-file-upload> loading </app-file-upload> -->
+    </div>
 </div>
--->
-
-
-
-
-<app-xlsx-view></app-xlsx-view>

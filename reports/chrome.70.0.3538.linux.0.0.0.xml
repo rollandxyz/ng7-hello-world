@@ -1,15 +1,15 @@
 <?xml version='1.0'?>
 <testExecutions version='1'>
     <file path='src/app/components/drag-drop-sorting/drag-drop-sorting.component.spec.ts'>
-        <testCase name='DragDropSortingComponent should create' duration='103'/>
+        <testCase name='DragDropSortingComponent should create' duration='112'/>
     </file>
     <file path='src/app/components/field-row/field-row.component.spec.ts'>
-        <testCase name='FieldRowComponent should create' duration='48'/>
+        <testCase name='FieldRowComponent should create' duration='33'/>
     </file>
     <file path='src/app/components/file-upload/file-upload.component.spec.ts'>
-        <testCase name='FileUploadComponent should create' duration='26'/>
+        <testCase name='FileUploadComponent should create' duration='28'/>
     </file>
     <file path='src/app/components/xlsx-view/xlsx-view.component.spec.ts'>
-        <testCase name='XlsxViewComponent should create' duration='42'/>
+        <testCase name='XlsxViewComponent should create' duration='37'/>
     </file>
 </testExecutions>
