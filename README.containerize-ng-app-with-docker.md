@@ -122,9 +122,10 @@ Now, as you project is published, you or any other person can run it locally by 
 
 ```bash
 sudo docker run -p 3000:80 your-account/ng7-hello-world:1.0
+sudo docker run -p 3000:80 --rm your-account/ng7-hello-world:1.0
 ```
 
-To quickly test the container and automatically clean everything up once it got stopped, you can add the--rm switch:
+To quickly test the container and automatically clean everything up once it got stopped, you can add the `--rm` switch:
 
 ```bash
 sudo docker run -p 3000:80 --rm your-account/ng7-hello-world:1.0
@@ -148,7 +149,9 @@ services:
             - 3000:80
 ```
 
-Note the build entry provided for development purposes. That means we are always going to build the local image if it is not available. You can remove this line later on once you start publishing images to Docker Hub.
+Note the build entry provided for development purposes.
+That means we are always going to build the local image if it is not available.
+You can remove this line later on once you start publishing images to Docker Hub.
 
 Now use the next command to build the image and run it in a container:
 
@@ -156,7 +159,7 @@ Now use the next command to build the image and run it in a container:
 docker-compose up
 ```
 
-As before, navigate to `http://localhost:3000/ng7-hello-world` to ensure the application runs as expected.
+Navigate to `http://localhost:3000/ng7-hello-world` to ensure the application runs as expected.
 
 Once you are done playing with the application, you can clean up everything using the next command:
 
