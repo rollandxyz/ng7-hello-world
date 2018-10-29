@@ -1,4 +1,4 @@
-# Create a Docker image from your Angular application, publish and consume it from the Docker Hub
+# Create a Docker image from Angular application, publish and consume it from the Docker Hub
 
 ## 1. Creating new Angular application
 
